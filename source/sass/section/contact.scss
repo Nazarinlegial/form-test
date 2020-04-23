@@ -1,0 +1,66 @@
+.contact {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 36px 32px;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8px);
+  border-radius: 0px 8px 0px 0px;
+  &__info {
+    width: 236px;
+    position: relative;
+    margin-bottom: 20px;
+    height: 55px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &::before {
+      font-family: "icomoon";
+      content: "";
+      padding: 12px;
+      color: #fff;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      left: 0;
+      top: 0;
+      background-color: #4c4c4c;
+      position: absolute;
+      font-size: 1.45rem;
+      transition: 0.3s;
+    }
+    a {
+      position: absolute;
+      padding-left: 60px;
+      line-height: 24px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 0.875rem;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: 0.3s;
+      span {
+        display: block;
+      }
+    }
+    &:hover{
+      a{
+        color:#FF5A5F
+      }
+      &::before{
+        color: #FF5A5F;
+      }
+    }
+    &:nth-child(1){
+      &::before{
+        content:$icon-envelope ;
+      }
+    }
+    &:nth-child(3){
+      &::before{
+        content:$icon-map-marker ;
+        font-size: 2.1rem;
+        
+      }
+    }
+  }
+}

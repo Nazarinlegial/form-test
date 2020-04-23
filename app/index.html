@@ -3,10 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <!-- <link rel="stylesheet" href="css/jquery.formstyler.theme.css"> -->
   <link rel="stylesheet" href="css/main.min.css">
   <title>Contact Us</title>
 </head>
 <body>
+<div class="bacground__top"></div>
+<div class="bacground__mid"><div class="bacground__map-marker"></div></div>
+<header class="header">
+  <div class="container">
+    <div class="header__box">
+    <div class="heade__logo"><a href="#" class="logo__link"><img src="images/logo.png" alt="" class="logo__img"></a>
+    </div>
+    <div class="header__btn">
+    <ul class="header__list">
+    <li class="header__item"><a href="#">How it works?</a></li>
+    <li class="header__item"><a href="#">Browse</a></li>
+    <li class="header__item"><a href="#">Research</a></li>
+    <li class="header__item"><a href="#">About</a></li>
+    <li class="header__item"><a href="#">Contacts</a></li>
+    </ul> 
+    
+      <button class="header__btn-sign">Sign Up</button>
+    </div>
+   </div>
+  </div>
+  <section class="form">
+    <div class="container">
+      <form action="" id="form" class="form__box ">
+        <div class="form__title">Contact Us</div>
+        <label class="form__label " for=sub"">Subject <span class="form__error" >Error Message</span> 
+          <select class="" id="sub">
+            <option value="1">Work opportunities</option>
+            <option value="2">Questions about product</option>
+            <option value="3">Сooperation</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label class="form__label " for="name">NAME <span class="form__error" >Error Message</span> 
+          <input placeholder="Enter your name..." class="form__input" name="name" type="text" id="name"></label>
+        <label class="form__label " for="phone">Phone number <span class="form__error" >Error Message</span> 
+          <input placeholder="Enter your phone number..." class="form__input" id="phone" type="text"></label>
+        <label class="form__label" for="email">EMAIL <span class="form__error" >Error Message</span> 
+          <input placeholder="Enter your email address..." class="form__input" id="email" type="email"></label>
+        <label class="form__label " for="area">message <span class="form__error" >Error Message</span> 
+          <textarea placeholder="Your message..." class="form__textarea" type="text" id="area" ></textarea></label>
+        <button type="submit" class="header__btn-sign form__btn">Send</button>
+      </form>
+    </div>
+  </section> 
+
+  <sectoin class="contact">
+    <div class="contact__info"><a href="#">888 Brannan Street,<span> 
+      in San Francisco, California</span></a></div>
+    <div class="contact__info"><a href="#">+1 (039) 032 03 84</a></div>
+    <div class="contact__info"><a href="#">info@airbnb.com</a></div>
+  </sectoin>
   
+  
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="jquery/jquery.formstyler.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 </html>

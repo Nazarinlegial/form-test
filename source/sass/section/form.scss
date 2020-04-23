@@ -1,0 +1,195 @@
+.form {
+  padding-top: 39px;
+  position: relative;
+  &__box {
+    position: absolute;
+    padding: 36px 48px 40px;
+    text-align: left;
+    background: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 8px 8px 0px 0px;
+    right: 0;
+  }
+  &__title {
+    color: #000;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 24px;
+    margin-bottom: 22px;
+  }
+  &__label {
+    display: block;
+    margin: 14px 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 14px;
+    align-items: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #484848;
+    position: relative;
+    select {
+      visibility: hidden !important;
+    }
+  }
+  &__input,
+  &__textarea {
+    display: block;
+    width: 320px;
+    margin-top: 8px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 16px;
+    padding: 14px 63px 14px 16px;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    position: relative;
+    &:focus {
+      outline: none;
+      border-radius: 3px 0px 0px 3px;
+      border-left: 1px solid #5a6bff;
+    }
+    &::placeholder {
+      color: #a6a6a6;
+    }
+  }
+  &__select {
+    color: #212121;
+  }
+  &__textarea {
+    resize: none;
+    height: 115px;
+    &::after {
+      content: "22";
+      width: 2px;
+      height: 100%;
+      background-color: #5a6bff;
+      border-radius: 8px 0px 0px 8px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__btn {
+    padding: 16px 182px;
+    margin: 0;
+  }
+}
+.form__box .jq-selectbox.jqselect {
+  display: block;
+  width: 400px;
+}
+.form__box .jq-selectbox.jqselect.dropdown.opened {
+  .jq-selectbox__trigger-arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5px 10px 5px;
+    border-color: transparent transparent #021212 transparent;
+  }
+}
+.form__box .jq-selectbox__select {
+  height: 22px;
+  background: transparent;
+  margin-top: 8px;
+  padding: 14px 63px 14px 16px;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  box-shadow: none;
+}
+.form__box .jq-selectbox__select-text {
+  line-height: 24px !important;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-transform: initial;
+}
+
+.form__box .jq-selectbox__trigger {
+  top: 58px;
+  position: absolute;
+  border-left: none;
+  right: 0;
+  width: 34px;
+  height: 100%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.form__box .jq-selectbox__trigger-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 5px 0 5px;
+  border-color: #021212 transparent transparent transparent;
+}
+.form__box .jq-selectbox__dropdown {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: #fff;
+  width: 398px;
+  box-shadow: 0px 15px 46px rgba(26, 26, 29, 0.12);
+  border-radius: 4px;
+  border: 1px solid #ebebeb;
+}
+
+.form__box .jq-selectbox__dropdown li {
+  padding: 10px 63px 10px 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: initial;
+  &:hover {
+    background: #f7f7f7;
+    color: #5a6bff;
+  }
+}
+.valid {
+  border: 1px solid green;
+  border-radius: 4px;
+}
+.form__label.error{
+.form__input,
+textarea{
+  border: 1px solid #ff5a5f;
+  border-radius: 4px;
+  }
+}
+.form__box.error .jq-selectbox__select {
+  border: 1px solid #ff5a5f;
+  border-radius: 4px;
+}
+.form__label.error .form__error {
+  visibility: visible;
+}
+.form__box.error .form__error {
+  visibility: visible;
+}
+.form__label.succes{
+.form__input,
+textarea{
+  border: 1px solid green;
+  border-radius: 4px;
+  }
+}
+.form__box.succes .jq-selectbox__select {
+  border: 1px solid green;
+  border-radius: 4px;
+}
+.form__error {
+  color: #ff5a5f;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: capitalize;
+  position: absolute;
+  right: 0;
+  visibility: hidden;
+}

@@ -1,0 +1,31 @@
+.bacground__top {
+  background-color: #fff;
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    z-index: -9999;
+}
+.bacground__mid {
+  background-image: url(../images/bcg-mapp.png);
+    height: 75%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -9999;
+}
+.bacground__map-marker{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  &::before {
+    font-family: $icomoon-font-family;
+    content: $icon-map-marker;
+    color: #FF5A5F;
+    position: absolute;
+    top: 356%;
+    left: -703%;
+    z-index: 9999;
+    font-size: 3rem;
+  }
+}
