@@ -1,0 +1,19 @@
+{
+  "name": "form-test",
+  "version": "1.0.0",
+  "description": "Form test",
+  "main": "index.js",
+  "git" : "https://github.com/Nazarinlegial/form-test.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nazar Kovalchuk",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "normalize": "^0.3.1"
+  }
+}
