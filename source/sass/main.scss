@@ -1,10 +1,10 @@
 @import "../../node_modules/normalize-scss/sass/normalize";
 
+@import "global/style.scss";
+@import "global/page.scss";
+@import "global/bacground.scss";
+@import "global/animated.scss";
 
-@import  'global/style.scss';
-@import  'global/page.scss';
-@import  'global/bacground.scss'; 
-
-@import 'section/header.scss';
-@import 'section/form.scss';
-@import 'section/contact.scss';
+@import "section/header.scss";
+@import "section/form.scss";
+@import "section/contact.scss";

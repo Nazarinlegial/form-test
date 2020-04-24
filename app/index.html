@@ -32,26 +32,43 @@
   </div>
   <section class="form">
     <div class="container">
-      <form action="" id="form" class="form__box ">
+      <form name="my" action="" id="formbox" class="form__box " onSubmit="return checkall()">
         <div class="form__title">Contact Us</div>
-        <label class="form__label " for=sub"">Subject <span class="form__error" >Error Message</span> 
-          <select class="" id="sub">
+        <label class="form__label " for=sub"">Subject <span class="form__error hiden" >Error Message</span> 
+          <span class="line"></span><select class="" id="sub">
             <option value="1">Work opportunities</option>
             <option value="2">Questions about product</option>
             <option value="3">Сooperation</option>
             <option value="4">Other</option>
           </select>
         </label>
-        <label class="form__label " for="name">NAME <span class="form__error" >Error Message</span> 
-          <input placeholder="Enter your name..." class="form__input" name="name" type="text" id="name"></label>
-        <label class="form__label " for="phone">Phone number <span class="form__error" >Error Message</span> 
-          <input placeholder="Enter your phone number..." class="form__input" id="phone" type="text"></label>
-        <label class="form__label" for="email">EMAIL <span class="form__error" >Error Message</span> 
-          <input placeholder="Enter your email address..." class="form__input" id="email" type="email"></label>
-        <label class="form__label " for="area">message <span class="form__error" >Error Message</span> 
-          <textarea placeholder="Your message..." class="form__textarea" type="text" id="area" ></textarea></label>
-        <button type="submit" class="header__btn-sign form__btn">Send</button>
+        <label class="form__label " for="name">NAME
+           <span id="span__name" class="form__error hiden" >Min lenght 3 Name</span> 
+            <input placeholder="Enter your name..." class="form__input " name="name" type="text" id="name" onBlur="validateName()">
+        </label>
+        <label class="form__label " for="phone">Phone number 
+          <span id="span__phone" class="form__error hiden" >Error Phone</span> 
+            <input placeholder="Enter your phone number..." class="form__input" id="phone" type="text" onBlur="validatePhone()">
+        </label>
+        <label class="form__label" for="email">EMAIL
+          <span id="span__mail" class="form__error hiden" >Error E-mail</span> 
+            <input placeholder="Enter your email address..." class="form__input" id="email" type="email" onBlur="validateEmail()">
+        </label>
+        <label class="form__label " for="area">message 
+          <span id="span__message" class="form__error hiden" >Error Message</span> 
+          <textarea placeholder="Your message..." class="form__textarea" type="text" id="area" onBlur="validateMessage()" ></textarea>
+        </label>
+        <button type="submit" class="header__btn-sign form__btn">Send
+          <div class="lds-default"><div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </button>
       </form>
+      <div id="send__message" class="send__message hiden">
+        <img src="images/send.png" alt="Send" class="send__img">
+        <div class="send__title">We received your message!</div>
+        <div class="send__text">Thanks for contacting us! We will get back to you ASAP</div>
+        <button class="send__btn header__btn-sign" id="send__btn" >Great!</button>
+      </div>
     </div>
   </section> 
 
