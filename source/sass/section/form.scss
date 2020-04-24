@@ -160,15 +160,16 @@
   }
 }
 .line {
-  width: 1px;
-  height: 51px;
+  top: 40.9px;
+  left: 1px;
+  border: 1px solid transparent;
+  border-radius: 8px 0px 0px 8px;
+  height: 48px;
+  width: 0.1px;
   background-color: #5a6bff;
   position: absolute;
-  top: 39px;
-  border-radius: 8px 0 0 8px;
   display: none;
   transition: 0.1s;
-  left: 2px;
 }
 .form__box .jq-selectbox__select-text {
   line-height: 24px !important;
